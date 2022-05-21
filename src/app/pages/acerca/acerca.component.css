@@ -1,0 +1,219 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    max-width: var(--max-width-container);
+    /* padding: var(--padding-container); */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    /* padding: 0 0 80px 0; */    
+}
+/* .contenedor{
+    padding: 30px 0;
+} */
+
+.titulo{
+    
+    /* font-weight: 300; */
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #F07D00;
+    padding: 30px 30px;
+}
+
+.titulo.left{
+    text-align: center;
+}
+
+.titulo.right{
+    text-align: center;
+}
+
+/* historia */
+.historia{
+    text-align: center;
+    --padding-container: 0 0 60px;    
+}
+
+.historia__container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.historia__tag{
+    /* font-weight: 700; */
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-weight: 300
+}
+
+.historia__paragraph{
+    padding: 30px;
+    text-align: left;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: justify;
+    
+}
+
+.instructor__img{
+    
+    height: 150px;
+    
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Mision */
+
+.wave-contenedor website{
+    background-color:#ded8c8!important
+
+}
+
+.website{
+    display: flex;
+    justify-content: space-between;
+    /* background: #f2f2f2; */     
+    }
+
+.website img{
+    width: 35%;
+}
+
+.website .contenedor-textos-main{
+    width: 50%;    
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 30px;
+    font-weight: 300;    
+}
+
+.galeria{
+    padding: 40px;
+}
+
+/* Nuestras instalaciones */
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    /* estilos generales */
+    .titulo{
+        font-size: 35px;
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    /* section */
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    .website .contenedor-textos-main{
+        width: 100%;
+    }
+
+    /* Cards */
+
+    .card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* galeria */
+
+    .galeria-cont>img{
+        width: 48%;
+    }
+
+    /* last */
+
+    .last-section img{
+        width: 98%;
+    }
+
+    .last-section .contenedor-textos-main{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:400px){
+    .titulo,
+    .textos-hero h1{
+        font-size: 30px;
+    }
+
+    .textos-hero p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card{
+        height: 380px;
+    }
+
+    .website .contenedor-textos-main{
+        margin-bottom: 30px;
+    }
+
+    .galeria-cont>img{
+        width: 97%;
+    }
+}
