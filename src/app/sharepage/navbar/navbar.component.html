@@ -1,16 +1,22 @@
 <section class="portada">
-<nav>  
-  <a href="#">Inicio</a>
-  <a href="acerca">Nosotros</a>
-  <a href="menu">Productos</a>
-  <!-- <a href="contacto">Contacto</a> -->
-</nav>
+  <nav>
+    
+    <div class="gap-3 d-md-flex justify-content-md-end mb-3">
+      <a class="btn-flat" href="/"><img src="assets/img/inicio.png" class="iconos-navbar">Inicio</a>
+      <button class="btn-flat" (click)="Acerca()"><img src="assets/img/nosotros.png"
+          class="iconos-navbar">Nosotros</button>
+      <button class="btn-flat" (click)="Menu()"><img src="assets/img/producto.png"
+          class="iconos-navbar">Productos</button>
+    </div>
+  
+  </nav>
 
   <section class="textos-header">
     <h1>Cafepas</h1>
     <h2>Productos Alimenticios Y De Aseo</h2>
-    <a href="contacto">Contactanos</a>
-  </section>  
+    <!-- <a href="contacto">Contactanos</a> -->
+    <button class="btn-flat" (click)="Contacto()">Contactanos</button>
+  </section>
 
   <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
       style="height: 100%; width: 100%;">
@@ -19,8 +25,3 @@
     </svg>
   </div>
 </section>
-
-
-
-
-

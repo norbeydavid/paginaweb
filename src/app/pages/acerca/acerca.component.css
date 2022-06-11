@@ -20,16 +20,14 @@
     margin: auto;
     /* padding: 0 0 80px 0; */    
 }
-/* .contenedor{
-    padding: 30px 0;
-} */
+
 
 .titulo{
     
     /* font-weight: 300; */
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     color: #F07D00;
     padding: 30px 30px;
 }
@@ -42,7 +40,7 @@
     text-align: center;
 }
 
-/* historia */
+
 .historia{
     text-align: center;
     --padding-container: 0 0 60px;    
@@ -109,6 +107,12 @@
 }
 
 /* Nuestras instalaciones */
+
+.galeria {
+    background: #ded8c8!important;
+    margin: auto;
+    overflow: hidden;
+}
 .galeria-cont{
     width: 100%;
     display: flex;
@@ -126,10 +130,6 @@
     cursor: pointer;
     overflow: hidden;
 }
-
-
-
-
 
 
 @media screen and (max-width:800px){
@@ -191,8 +191,6 @@
 
 
 }
-
-
 
 @media screen and (max-width:400px){
     .titulo,
